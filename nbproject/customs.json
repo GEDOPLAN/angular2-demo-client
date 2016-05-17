@@ -1,0 +1,10 @@
+{
+    "elements": {
+        "app-cli-header": {
+            "attributes": {
+                "header-text": {}
+            }
+        }
+    },
+    "attributes": {}
+}

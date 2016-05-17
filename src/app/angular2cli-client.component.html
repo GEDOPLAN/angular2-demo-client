@@ -9,107 +9,28 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">SOLID.</a>
+            <a class="navbar-brand" href="index.html">angular2cli.</a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="single-post.html">SINGLE POST</a></li>
-                        <li><a href="portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="single-project.html">SINGLE PROJECT</a></li>
-                    </ul>
-                </li>
+                <li><a bind-routerLink="['/home']">HOME</a></li>
+                <li><a bind-routerLink="['/service']">SERVICES</a></li>
+                <li><a bind-routerLink="['/forms']">FORMULARS</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </div>
-
-<!-- *****************************************************************************************************************
- HEADERWRAP
- ***************************************************************************************************************** -->
-<div id="headerwrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h3>Show your work with this beautiful theme</h3>
-                <h1>Eyecatching Bootstrap 3 Theme.</h1>
-                <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
-                <h5>More Lorem Ipsum added here too.</h5>				
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 himg">
-                <img src="app/assets/template/assets/img/browser.png" class="img-responsive">
-            </div>
-        </div><!-- /row -->
-    </div> <!-- /container -->
-</div><!-- /headerwrap -->
-
-<!-- *****************************************************************************************************************
- SERVICE LOGOS
- ***************************************************************************************************************** -->
 <div id="service">
-    <div class="container">
-        <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-heart-o"></i>
-                <h4>Handsomely Crafted</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-flask"></i>
-                <h4>Retina Ready</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-trophy"></i>
-                <h4>Quality Theme</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>		 				
-        </div>
-    </div><! --/container -->
-</div><! --/service -->
+    <router-outlet></router-outlet>
+</div>
 
 
 <!-- *****************************************************************************************************************
  FOOTER
  ***************************************************************************************************************** -->
-<div id="footerwrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h4>About</h4>
-                <div class="hline-w"></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            </div>
-            <div class="col-lg-4">
-                <h4>Social Links</h4>
-                <div class="hline-w"></div>
-                <p>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-tumblr"></i></a>
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <h4>Our Bunker</h4>
-                <div class="hline-w"></div>
-                <p>
-                    Some Ave, 987,<br/>
-                    23890, New York,<br/>
-                    United States.<br/>
-                </p>
-            </div>
-
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/footerwrap -->
+<footer id="footerwrap">
+    <div class="col-md-4 col-md-offset-4">
+        <h4>by GEDOPLAN</h4>
+        <div class="hline-w"></div>
+    </div>
+</footer><! --/footerwrap -->

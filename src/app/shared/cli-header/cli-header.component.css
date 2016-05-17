@@ -1,0 +1,21 @@
+#headerwrap {
+    background-color: #00b3fe;
+    min-height: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#headerwrap h3, h5 {
+    color: white;
+    font-weight: 400;
+}
+
+#headerwrap h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+#headerwrap .img-responsive {
+    margin: 0 auto;
+}

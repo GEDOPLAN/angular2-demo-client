@@ -1,0 +1,23 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 80px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+}
+
+#service{
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+#footerwrap {
+    padding-top: 10px;
+    background: #384452;
+}
