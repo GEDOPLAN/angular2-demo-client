@@ -1,37 +1,58 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Angular2cliClient</title>
-  <base href="/">
-  {{content-for 'head'}}
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <title>Angular2cliClient</title>
+        <base href="/">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{content-for 'head'}}
 
-  <!-- Service worker support is disabled by default.
-       Install the worker script and uncomment to enable.
-       Only enable service workers in production.
-  <script type="text/javascript">
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/worker.js').catch(function(err) {
-        console.log('Error installing service worker: ', err);
-      });
-    }
-  </script>
-  -->
-</head>
-<body>
-  <angular2cli-client-app>Loading...</angular2cli-client-app>
+        <!-- Template Styles -->
+        <link href="app/assets/template/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="app/assets/template/assets/css/style.css" rel="stylesheet">
+        <link href="app/assets/template/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="app/assets/css/angular2cli.css" rel="stylesheet" type="text/css"/>
 
-  <script src="vendor/es6-shim/es6-shim.js"></script>
-  <script src="vendor/reflect-metadata/Reflect.js"></script>
-  <script src="vendor/systemjs/dist/system.src.js"></script>
-  <script src="vendor/zone.js/dist/zone.js"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-  <script>
-    System.import('system-config.js').then(function () {
-      System.import('main');
-    }).catch(console.error.bind(console));
-  </script>
+        <!-- Service worker support is disabled by default.
+             Install the worker script and uncomment to enable.
+             Only enable service workers in production.
+        <script type="text/javascript">
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/worker.js').catch(function(err) {
+              console.log('Error installing service worker: ', err);
+            });
+          }
+        </script>
+        -->
+    </head>
+    <body>
+
+    <angular2cli-client-app>
+        <div class="centered">
+            <h1>Anwendung wird geladen...</h1>
+            <div><img src="app/assets/images/loading_03.gif" alt="loading"/></div>
+        </div>
+    </angular2cli-client-app>
+
+    <script src="vendor/es6-shim/es6-shim.js"></script>
+    <script src="vendor/reflect-metadata/Reflect.js"></script>
+    <script src="vendor/systemjs/dist/system.src.js"></script>
+    <script src="vendor/zone.js/dist/zone.js"></script>
+    <script src="app/assets/template/js/jquery-1.12.3.js"></script>
+    <script src="app/assets/template/assets/js/bootstrap.min.js"></script>
+    <script src="app/assets/template/assets/js/custom.js"></script>
+
+    <script>
+        System.import('system-config.js').then(function () {
+            System.import('main');
+        }).catch(console.error.bind(console));
+    </script>
 </body>
 </html>
