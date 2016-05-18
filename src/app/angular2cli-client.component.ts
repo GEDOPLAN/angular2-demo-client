@@ -15,7 +15,7 @@ import { HomeComponent } from './+home';
 @Routes([
     { path: '/home', component: HomeComponent },
     { path: '/service', component: ServiceComponent },
-    { path: '/forms', component: FormsComponent }
+    { path: '/forms/:id', component: FormsComponent }
 ])
 export class Angular2cliClientAppComponent {
     title = 'angular2cli-client works!';
