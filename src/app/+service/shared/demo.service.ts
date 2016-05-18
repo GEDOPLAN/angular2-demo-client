@@ -13,7 +13,7 @@ export class DemoService {
 
     constructor(private http: Http, @Inject("RESTURL") private resturl) { }
 
-    getData(): Observable<any> {
+    getData(): Observable<Rest.QueryResult<Rest.Customer>> {
         if (!this.queryResult)
             return this.http.get(this.resturl + "customer"). map(e => e.json());
        else 

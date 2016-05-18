@@ -14,7 +14,7 @@ export class ServiceComponent implements OnInit {
 
     constructor(public demoService: DemoService) { }
 
-    customers:any;
+    customers: Rest.QueryResult<Rest.Customer>;
     
     ngOnInit() {
         this.demoService.getData().subscribe(customers => this.customers=customers);

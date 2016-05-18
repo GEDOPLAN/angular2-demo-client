@@ -2,15 +2,21 @@
   "name": "angular2cli-client",
   "version": "0.0.0",
   "license": "MIT",
-  "angular-cli": {},
+  "config": {
+      "tsdlocation": "../angular2cli/target/rest.d.ts",
+      "tsdlocationTarget": "typings/rest.d.ts"
+  },
   "scripts": {
     "start": "ng server",
+    "startp": "ng server --proxy http://localhost:8080",
     "postinstall": "typings install",
     "lint": "tslint \"src/**/*.ts\"",
     "format": "clang-format -i -style=file --glob=src/**/*.ts",
     "pree2e": "webdriver-manager update",
-    "build": "ng build &&  node ./config/maven-deploy.js",
-    "e2e": "protractor"
+    "maveninstall": "node ./config/maven-deploy.js",
+    "loadtsd": "node ./config/copy-tsd-files.js",
+    "e2e": "protractor",
+    "build": "ng build && npm run loadtsd && npm run maveninstall"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +39,7 @@
     "clang-format": "^1.0.35",
     "codelyzer": "0.0.14",
     "ember-cli-inject-live-reload": "^1.4.0",
+    "fs-extra": "^0.30.0",
     "jasmine-core": "^2.4.1",
     "jasmine-spec-reporter": "^2.4.0",
     "karma": "^0.13.15",
