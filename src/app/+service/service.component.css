@@ -1,0 +1,13 @@
+.container *{
+    font-size: xx-large;
+}
+
+.badge{
+    padding: 0.5em;
+    background-color: #00b3fe;
+    transition: background-color .4s linear, color .4s linear;
+}
+
+.badge:hover{
+    color: #5e5e5e; 
+}

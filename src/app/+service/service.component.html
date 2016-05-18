@@ -1,1 +1,18 @@
 <app-cli-header header-text="Service-Beispiel"></app-cli-header>
+
+<div class="container">
+    <div class="col-md-10 col-md-offset-2 col-sm-12 col-sm-offset-0">
+        Anzahl Kunden: <p class="badge">{{customers?.resultCount}}</p>
+    </div>
+    <div class="col-md-10 col-md-offset-2 col-sm-12 col-sm-offset-0">
+        Die ersten 10: 
+        <table *ngIf="customers">
+            <tbody>
+                <tr *ngFor="let customer of customers.result | slice:0:10">
+                    <td>{{customer.customerID}}</td>
+                    <td>{{customer.companyName}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
