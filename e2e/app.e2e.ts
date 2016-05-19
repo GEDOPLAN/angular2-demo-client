@@ -7,8 +7,8 @@ describe('angular2cli-client App', function() {
     page = new Angular2cliClientPage();
   })
 
-  it('should display message saying app works', () => {
+  it('should display menus', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('angular2cli-client works!');
+    expect(page.getMenu().count()).toEqual(3);
   });
 });
