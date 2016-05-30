@@ -1,5 +1,5 @@
 var fs = require('fs-extra')
-var package = require('../package.json');
+var package = require('../../package.json');
 
 try {
     fs.copySync(package.config.tsdlocation, package.config.tsdlocationTarget)
