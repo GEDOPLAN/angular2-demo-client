@@ -12,3 +12,8 @@ npm run start-proxy
 
 npm run test
 - E2E Test (inklusive Rest Mock API)
+
+## Build
+npm run build
+- baut das Projekt im Prod-Modus
+- installiert das Ergebnis als Maven-Artefakt
